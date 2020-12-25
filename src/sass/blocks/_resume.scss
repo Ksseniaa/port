@@ -1,0 +1,96 @@
+.resume {
+    background-color: $main-color;
+    padding-top: 120px;
+    &__wrapper {
+        margin-top: 60px;
+        padding: 0 65px;
+        display: grid;
+        grid-template-columns:repeat(2, 425px);
+        column-gap: 136px;
+    }
+    &__title{
+        text-align: center;
+        color: $text-color;
+    }
+    &__column{
+        &-title{
+            padding-left: 35px;
+            position: relative;
+            color: $second-color;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                left: -6px;
+                top: 50%;
+                transform: translateY(-50%);
+                background: $second-color;
+                border-radius: 100%;
+            }
+
+        }
+    }
+    ul {
+        list-style-type: none;
+        li {
+            position: relative;
+            &:after{
+                content: '';
+                width: 2px;
+                height: calc(100% + 15px);
+                position: absolute;
+                top: -15px;
+                left: 0;
+                background-color: $second-color;
+                
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        &::before{
+            content: '';
+            height: 1px;
+            width: 44px;
+            position: absolute;
+            top: 67px;
+            background-color: $second-color;
+        }
+        &-title{
+            color: $text-color;
+        }
+        &-head{
+            position: relative;
+            padding:45px 0 0 100px;
+            
+        }
+        &-body{
+            padding-left: 43px;
+            margin-top: 12px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: $text-color;   
+        }
+        &-icon {
+            position: absolute;
+            top: 52px;
+            left: 45px;
+            @include before_circle;
+            z-index: 1;
+            img{
+                position: absolute;
+                left: 15px;
+                top: 15px;
+            }
+        }
+        &-subtitle{
+            font-size: 12px;
+            line-height: 18px;
+            color: $text-color;
+        }
+    }
+    
+
+}

@@ -1,0 +1,44 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: #485540;
+    margin: 25px auto 0 auto;
+}
+@import 'blocks/promo';
+@import 'blocks/title';
+@import 'blocks/buttons';
+@import 'blocks/sidepanel';
+@import 'blocks/menu';
+@import 'blocks/about';
+@import 'blocks/resume';
+@import 'blocks/programms';
+@import 'blocks/portfolio';
+@import 'blocks/pricelist';
+@import 'blocks/contacts';
+@import 'blocks/promo-media';
+@import 'blocks/menu-media';
+@import 'blocks/about-media';
+@import 'blocks/resume-media';
+@import 'blocks/programms-media';
+@import 'blocks/portfolio-media';
+@import 'blocks/sidepane-media';
+@import 'blocks/pricelist-media';
+@import 'blocks/contacts-media';
+

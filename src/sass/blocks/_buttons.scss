@@ -1,0 +1,17 @@
+.btn {
+    height: 45px;
+    width: 130px;
+    padding: 12px 25px;
+    text-align: center;
+    background-color:  $main-color;
+    color: $text-color;
+    border-radius: 35px;
+    box-shadow: inset -3px -3px 8px rgba(65, 78, 58, 0.4), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.1s ease-in-out;
+    &:hover {
+        opacity: 2;
+        box-shadow: -6px -6px 10px rgba(65, 78, 58, 0.9), 6px 6px 10px rgba(0, 0, 0, 0.2);
+        color: $second-color;
+    }
+    
+}

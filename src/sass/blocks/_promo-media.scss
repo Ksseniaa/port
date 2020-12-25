@@ -1,0 +1,45 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 768px){
+    .container {
+        max-width: 540px;
+    }
+    .promo{
+        &__title{
+            font-size: 30px;
+            line-height: 36px;
+        }
+    }
+
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .promo{
+        padding-bottom: 40px;
+        &__title{
+           text-align: center;
+        }
+        &__btns{
+            margin: 0 auto;
+            margin-top: 30px;
+            
+        }
+        .hamburger{
+            right: 20px;
+        }
+    }
+}

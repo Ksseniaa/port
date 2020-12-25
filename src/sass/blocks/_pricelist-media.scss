@@ -1,0 +1,43 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .pricelist{
+        &__wrapper{
+            grid-template-columns: repeat(auto-fit, 350px);
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .container {
+        max-width: 540px;
+    }
+    .pricelist{
+        &__wrapper{
+            margin-top: 40px;
+            justify-content: center;
+        }
+    }
+
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .pricelist{
+        &__wrapper{
+            grid-template-columns: repeat(auto-fit, 280px);
+        }
+    }
+}

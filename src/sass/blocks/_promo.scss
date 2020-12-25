@@ -1,0 +1,21 @@
+.promo {
+    min-height: 100vh;
+    position: relative;
+    background: $main-color;
+    padding-top: 205px;
+    &__btns {
+        margin-top: 25px;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        width: 280px;
+    }
+    &__link {
+        color: $second-color;
+        font-weight: 700;
+        &:hover {
+            color: $second-color;
+            text-decoration: none;
+        }
+    }
+}
